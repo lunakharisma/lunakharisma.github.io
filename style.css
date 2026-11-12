@@ -125,6 +125,20 @@ body {
   cursor: pointer;
 }
 
+.portrait-img-box {
+  aspect-ratio: 4 / 5;
+  width: 100%;
+  overflow: hidden;
+  background-color: var(--bg-sand);
+}
+
+.portrait-img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan gambar memenuhi ruang tanpa senget */
+  display: block;
+}
+
 /* =========================================
    HTML5 DIALOG POPUP (CENTERED AUTOMATICALLY)
    ========================================= */
