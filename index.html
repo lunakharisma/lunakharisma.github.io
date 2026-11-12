@@ -54,37 +54,23 @@
           <div class="hero-actions">
             <a href="#work" class="btn-solid">Explore Work</a>
             <button class="btn-outline" onclick="alert('Email me at: lunakharisma@graduate.utm.my')">Contact Me</button>
-            <!-- Custom Popup di Tengah Skrin -->
-<div id="myPopup" class="popup-overlay" onclick="closePopupOnBg(event)">
-  <div class="popup-box">
+           <!-- Butang Contact Me -->
+<button class="btn-solid" onclick="document.getElementById('emailDialog').showModal()">Contact Me</button>
+
+<!-- Kotak Pop-up Rasmi HTML5 (Terus di Tengah Skrin) -->
+<dialog id="emailDialog" class="nude-dialog">
+  <div class="dialog-content">
+    <span class="tag">DIRECT CONTACT</span>
     <h3>Get in Touch</h3>
-    <p>You can reach me directly via email at:</p>
+    <p>Drop me an email directly at:</p>
     
-    <!-- Kotak Email -->
-    <div class="popup-email-box">
-      lunakharisma@graduate.utm.my
+    <div class="dialog-email">
+      hello@amirastudio.com
     </div>
 
-    <!-- Butang Tutup -->
-    <button class="btn-solid" onclick="closePopup()">Close</button>
+    <button class="btn-solid" onclick="document.getElementById('emailDialog').close()">Close</button>
   </div>
-</div>
-          <script>
-  function openPopup() {
-    document.getElementById('myPopup').style.display = 'flex';
-  }
-
-  function closePopup() {
-    document.getElementById('myPopup').style.display = 'none';
-  }
-
-  // Tutup popup bila klik di luar kotak
-  function closePopupOnBg(event) {
-    if (event.target.id === 'myPopup') {
-      closePopup();
-    }
-  }
-</script>
+</dialog>
           </div>
         </div>
 
