@@ -53,8 +53,22 @@
           </div>
           <div class="hero-actions">
             <a href="#work" class="btn-solid">Explore Work</a>
-            <button class="btn-outline" onclick="openContactModal()">Contact Me</button>
             <button class="btn-outline" onclick="alert('Email me at: lunakharisma@graduate.utm.my')">Contact Me</button>
+            <!-- Custom Popup di Tengah Skrin -->
+<div id="myPopup" class="popup-overlay" onclick="closePopupOnBg(event)">
+  <div class="popup-box">
+    <h3>Get in Touch</h3>
+    <p>You can reach me directly via email at:</p>
+    
+    <!-- Kotak Email -->
+    <div class="popup-email-box">
+      hello@amirastudio.com
+    </div>
+
+    <!-- Butang Tutup -->
+    <button class="btn-solid" onclick="closePopup()">Close</button>
+  </div>
+</div>
           </div>
         </div>
 
