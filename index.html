@@ -55,7 +55,23 @@
     <button class="btn-outline" onclick="openContactModal()">Contact Me</button>
           </div>
         </div>
+<!-- Butang Contact Me -->
+<button class="btn-solid" onclick="document.getElementById('emailDialog').showModal()">Contact Me</button>
 
+<!-- Kotak Pop-up Rasmi HTML5 (Terus di Tengah Skrin) -->
+<dialog id="emailDialog" class="nude-dialog">
+  <div class="dialog-content">
+    <span class="tag">DIRECT CONTACT</span>
+    <h3>Get in Touch</h3>
+    <p>Drop me an email directly at:</p>
+    
+    <div class="dialog-email">
+      lunakharisma@graduate.utm.my
+    </div>
+
+    <button class="btn-solid" onclick="document.getElementById('emailDialog').close()">Close</button>
+  </div>
+</dialog>
         <div class="about-visual checkered-bg">
           <div class="portrait-frame">
             <div class="portrait-placeholder">
