@@ -62,13 +62,29 @@
     
     <!-- Kotak Email -->
     <div class="popup-email-box">
-      hello@amirastudio.com
+      lunakharisma@graduate.utm.my
     </div>
 
     <!-- Butang Tutup -->
     <button class="btn-solid" onclick="closePopup()">Close</button>
   </div>
 </div>
+          <script>
+  function openPopup() {
+    document.getElementById('myPopup').style.display = 'flex';
+  }
+
+  function closePopup() {
+    document.getElementById('myPopup').style.display = 'none';
+  }
+
+  // Tutup popup bila klik di luar kotak
+  function closePopupOnBg(event) {
+    if (event.target.id === 'myPopup') {
+      closePopup();
+    }
+  }
+</script>
           </div>
         </div>
 
@@ -815,12 +831,12 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <span>&copy; 2026 AMIRA.STUDIO — ALL RIGHTS RESERVED.</span>
+      <span>&copy; 2026  LUNA KHARISMA | SCST1133</span>
       <div class="footer-links">
         <a href="#">LinkedIn</a>
         <a href="#">Behance</a>
         <a href="#">Dribbble</a>
-        <a href="mailto:hello@amirastudio.com">Email</a>
+        <a href="mailto:hello@lunakharisma@graduate.utm.my">Email</a>
       </div>
     </div>
   </footer>
